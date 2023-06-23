@@ -1,0 +1,362 @@
+// .App-header-main {
+//     height: 70px;
+//     z-index: 10;
+//     position: relative;
+//     display: block;
+//     width: 100%;
+//     .App-header-inner {
+//         display: flex;
+//         flex-flow: row nowrap;
+//         align-items: center;
+//         justify-content: space-between;
+//         width: 100%;
+//     }
+// }
+.App-header-main {
+    display: flex;
+    justify-content: space-between;
+
+    .App-header-logo {
+        float: left;
+        width: 140px;
+        height: 50px;
+        margin: 5px 24px 16px 50px;
+
+        img {
+            height: 60px;
+            position: absolute;
+        }
+
+    }
+
+    .App-header-welcome {
+        margin-left: 38px;
+        text-align: left;
+        color: #FFFFFF;
+        font-size: 18px;
+    }
+
+    .App-header-menu {
+        width: 75%;
+
+        .ant-tabs-nav {
+            height: 64px !important;
+
+            .ant-tabs-tab {
+
+                // width: 140px;
+                &.ant-tabs-tab-active {
+                    background-color: transparent;
+
+                    .ant-tabs-tab-btn {
+                        color: #FFFFFF
+                    }
+                }
+            }
+
+        }
+
+        .header-tab {
+            a {
+                font-size: medium;
+                font-weight: 700;
+                color: #FFFFFF;
+                text-align: center;
+
+                :hover {
+                    color: #000000;
+                }
+
+                .active-tab {
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    .App-header-user-login {
+        width: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.gap-element {
+    display: block;
+    height: auto;
+    padding-top: 60px;
+}
+
+.App-body-contain {
+    min-height: calc(100vh - 250px);
+    margin-bottom: 24px;
+
+
+    .ant-carousel {
+        img {
+            width: 100%;
+        }
+    }
+
+    .app-divider-home {
+        .ant-divider-inner-text {
+            font-size: xx-large;
+            font-weight: 700;
+        }
+    }
+
+    .ant-upload-wrapper {
+        width: 97%;
+        margin-left: 3%;
+
+        .ant-upload {
+            width: 102px;
+            height: 102px;
+            margin-inline-end: 8px;
+            margin-bottom: 8px;
+            text-align: center;
+            vertical-align: top;
+            background-color: rgba(0, 0, 0, .02);
+            border: 1px dashed #d9d9d9;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: border-color .3s;
+        }
+    }
+
+    .app-group-button {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+    }
+
+    .app-row-post {
+        max-width: 80%;
+        margin-left: 10% !important;
+    }
+
+    .gutter-row {
+        padding: 8px 0;
+        background: transparent;
+
+        .app-col-post-item {
+            display: flex;
+            flex-direction: column;
+            border: 1px dashed silver;
+            box-shadow: 5px 5px #DDDDDD;
+
+            .app-post-short-img {
+                max-height: 300px;
+            }
+
+            .app-post-short-detail {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    padding-left: 16px;
+                    font-size: medium;
+
+                    span {
+                        padding-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .app-news-info {
+        width: 80%;
+        margin-left: 10%;
+        max-width: 80%;
+        margin-top: 10px;
+        margin-bottom: 24px;
+
+        .app-col-post-item {
+            display: flex;
+            flex-direction: row;
+
+            .app-post-short-detail {
+                width: 100%;
+                margin: 10px 24px 0px 32px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px
+            }
+        }
+
+        .app-news-title {
+            h2 {
+                color: #ff0000
+            }
+        }
+    }
+
+    .App-row-post-info {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .app-post-info {
+            width: 80%;
+            margin-left: 10%;
+            max-width: 80%;
+            margin-top: 10px;
+            margin-bottom: 24px;
+
+            .app-col-post-item {
+                display: flex;
+                flex-direction: row;
+
+                .app-post-short-detail {
+                    width: 100%;
+                    margin: 10px 24px 0px 32px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px
+                }
+            }
+
+            .app-news-title {
+                h2 {
+                    color: #ff0000
+                }
+            }
+        }
+
+        .app-post-characteristic {
+            .app-characteristic-item {
+                padding: 5px 10px 10px 50px;
+                margin-left: 45px;
+                font-size: medium;
+            }
+        }
+    }
+
+}
+
+.App-post-layout-container {
+    min-height: calc(100vh - 250px);
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+
+    .App-left-filter-panel {
+        width: 20%;
+        min-width: 20%;
+
+        .app-button-search {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+    }
+
+    .ant-divider {
+        height: auto;
+    }
+
+    .app-post-info {
+        width: 80%;
+        margin-left: 10%;
+        max-width: 80%;
+        margin-top: 10px;
+        margin-bottom: 24px;
+
+        .app-col-post-item {
+            display: flex;
+            flex-direction: row;
+
+            .app-post-short-img {
+                max-height: 300px;
+            }
+
+            .app-post-short-detail {
+                width: 100%;
+                margin: 10px 24px 0px 32px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px
+            }
+        }
+    }
+
+}
+
+.app-footer-logo {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-left: 85px;
+
+    img {
+        height: 100px;
+        position: relative;
+    }
+
+}
+
+.app-numeric-input {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 4px 11px;
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 14px;
+    line-height: 1.5714285714285714;
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-width: 0;
+    background-color: #ffffff;
+    background-image: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d9d9d9;
+    border-radius: 6px;
+    transition: all 0.2s;
+
+    &:hover {
+        border-color: #4096ff;
+        border-inline-end-width: 1px;
+    }
+
+    &:focus {
+        border-color: #4096ff;
+        box-shadow: 0 0 0 2px rgb(5 145 255 / 10%);
+        border-inline-end-width: 1px;
+        outline: 0;
+    }
+
+}
+
+.app-text-overflow-line-1 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.app-text-overflow-line-2 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.app-text-overflow-line-3 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.app-post-detail {
+    .ant-pagination-item {
+        height: 130px !important;
+        border-radius: 0 !important;
+    }
+}
