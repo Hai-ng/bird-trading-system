@@ -104,20 +104,26 @@ export class RechargePage extends React.Component<IRechargePageProps, IRechargeP
                                                     <div style={{ margin: 24, border: '1px solid', borderRadius: 8, padding: '16px 24px 16px 16px', display: 'flex', flexDirection: 'column' }}>
                                                         {/* <span><strong>{this.state.rechargeCode} {'<Noi dung thanh toan>'}</strong></span> */}
                                                         {/* <span>Ví dụ: {this.state.rechargeCode} nap tien dang tin SDT {this.state.currentUser.phoneNumber}</span> */}
-                                                        <span><strong>{'<Tên tài khoản>'} {'nap tien dang tin'}</strong></span>
-                                                        <span>Ví dụ: {this.state.currentUser?.username} nap tien dang tin</span>
+                                                        <span><strong>{'<Tên tài khoản>'} {'nap tien bird trading'}</strong></span>
+                                                        <span>Ví dụ: {this.state.currentUser?.username} nap tien bird trading</span>
                                                         {/* <span>--------------------------------------------</span>
                                                         <span><em>{this.state.rechargeCode}</em>{' là mã chuyển khoản của riêng bạn. Bạn vui lòng nhập đúng mã ở đầu nội dung chuyển khoản để việc xác nhận giao dịch được nhanh chóng và chính xác.'}</span> */}
                                                         <span>--------------------------------------------</span>
                                                         <span>Chuyển tiền tới: </span>
                                                         <div style={{ display: 'flex', flexDirection: 'column', paddingLeft: '12px' }}>
-                                                            <span>- Số tài khoản: 100000686868</span>
-                                                            <span>- Chủ tài khoản: Đặng Văn Kiên</span>
-                                                            <span>- Ngân hàng: Vietcombank</span>
+                                                            <span>
+                                                                <span>- Số tài khoản:</span>
+                                                                <span style={{ color: 'red' }}> 90902071999</span>
+                                                            </span>
+                                                            <span>
+                                                                <span>- Chủ tài khoản:</span>
+                                                                <span style={{ color: 'red' }}> Nguyễn Ngọc Hải </span>
+                                                            </span>
+                                                            <span>- Ngân hàng: TP Bank</span>
                                                         </div>
                                                         <span>--------------------------------------------</span>
                                                         <span><em>Tiền sẽ được cập nhật vào ví của bạn sau khi admin nhận được số tiền chuyển khoản.</em></span>
-                                                        <span>Mọi thắc mắc xin liên hệ qua email: kienadmin@gmail.com</span>
+                                                        <span>Mọi thắc mắc xin liên hệ qua email: hainguyen2799@gmail.com</span>
                                                     </div>
                                                 </div>
 
