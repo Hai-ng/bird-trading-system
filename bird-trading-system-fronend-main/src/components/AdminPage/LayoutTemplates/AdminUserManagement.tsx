@@ -4,7 +4,8 @@ import { ColumnsType } from "antd/es/table";
 import { AdminService } from "../AdminService";
 import CoreServices from "../../../services/data.services";
 import { CommonProps, IUserInfo } from "../../CommonComponents/AppInterfaces";
-import { FormOutlined } from '@ant-design/icons';
+// import { FormOutlined } from '@ant-design/icons';
+import { InfoCircleOutlined } from '@ant-design/icons';
 import { UserDetail } from "../DialogTemplates/UserDetail";
 
 interface IUserManagementState {
@@ -97,7 +98,9 @@ export class UserManagement extends React.Component<IUserManagementProps, IUserM
                 render: (data: IColumnData) => {
                     return (
                         <Button style={{ backgroundColor: '#64be43' }}
-                            type="primary" shape="default" icon={<FormOutlined />}
+                            // type="primary" shape="default" icon={<FormOutlined />}
+                            type="primary" shape="default" icon={<InfoCircleOutlined />}
+                            
                             onClick={() => {
                                 this.setState({
                                     isOpenUserDetail: true,

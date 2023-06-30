@@ -109,7 +109,7 @@ export class PreviewPostDetail extends React.Component<IPreviewPostProps, IPrevi
 
                         <div style={{ display: 'flex', flexDirection: 'column', marginTop: 16 }}>
                             <span>Author: {this.state.authorInfo?.lastName} {this.state.authorInfo?.firstName}</span>
-                            <span>Email: {this.state.authorInfo?.username}</span>
+                            <span>Username: {this.state.authorInfo?.username}</span>
                             <span>----------------------------------------------------</span>
                             <span><strong>Payment</strong></span>
                             <span>Package: {this.getPackTitleById((this.state.postTransaction as Array<any>)[0]?.packId as string)}</span>

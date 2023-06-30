@@ -35,7 +35,7 @@ export class HeaderTemplate extends React.Component<IHeaderProps, IHeaderState> 
             <Layout>
                 <Header className="App-header-main" style={{ backgroundColor: '#64be43' }}>
                     <div className="App-header-logo">
-                        <img src={require('../../assets/images/LOGO2.png')} alt="logo" />
+                        <a href="/home"><img src={require('../../assets/images/LOGO2.png')} alt="logo" /></a>
                     </div>
                     <div className="App-header-menu">
                         <Row>
@@ -126,12 +126,12 @@ export class HeaderTemplate extends React.Component<IHeaderProps, IHeaderState> 
                             <Avatar
                                 src={this.state.currentUser?.avatar ? this.state.currentUser.avatar : require('../../assets/images/guest-avatar.png')}
                                 shape="circle"
-                                size={28}
+                                size={32}
                             ></Avatar>
                         </div>
-                        <div style={{ padding: 7 }}></div>
+                        <div style={{ padding: 5 }}></div>
                         <div style={{ display: 'flex', flexDirection: 'column' }} >
-                            <span style={{ fontWeight: 500 }}>
+                            <span style={{ fontWeight: 700 }}>
                                 {this.state.currentUser?.lastName} {this.state.currentUser?.firstName}
                             </span>
                             <span>
@@ -156,7 +156,7 @@ export class HeaderTemplate extends React.Component<IHeaderProps, IHeaderState> 
                         key: 'recharge',
                         label: (
                             <a href="/recharge">
-                                Nạp tiền vào ví
+                                Nạp tiền
                             </a>
                         ),
                         icon: <DollarOutlined />
