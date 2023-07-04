@@ -210,11 +210,11 @@ export class HomePage extends React.Component<IHomePageProps, IHomePageState> {
                             style={{ maxHeight: 300, maxWidth: 230, minHeight: 300, minWidth: 230 }}
                             src={data.media[0]?.url} alt='' />
                         <div className="app-post-short-detail">
-                            <span className="app-post-title app-text-overflow-line-2"
+                            <span className="app-post-title app-text-overflow-line-1"
                                 style={{
                                     color: objectMapping?.style.color,
                                     fontWeight: objectMapping?.style.fontWeight,
-                                    maxHeight: 43.2,
+                                    maxHeight: 50,
                                 }}>
                                 {objectMapping?.style.markIcon ? <StarFilled style={{ color: '#00F5FF' }} /> : ''} {objectMapping?.style.isUpper ? data['title'].toUpperCase() : data['title']}
                             </span>
@@ -266,11 +266,11 @@ export class HomePage extends React.Component<IHomePageProps, IHomePageState> {
                             style={{ maxHeight: 300, maxWidth: 230, minHeight: 300, minWidth: 230 }}
                             src={data.media[0]?.url} alt='' />
                         <div className="app-post-short-detail">
-                            <span className="app-post-title app-text-overflow-line-2"
+                            <span className="app-post-title app-text-overflow-line-1"
                                 style={{
                                     color: objectMapping?.style.color,
                                     fontWeight: objectMapping?.style.fontWeight,
-                                    maxHeight: 43.2,
+                                    maxHeight: 50,
                                 }}>
                                 {objectMapping?.style.markIcon ? <StarFilled style={{ color: '#00F5FF' }}/> : ''} {objectMapping?.style.isUpper ? data['title'].toUpperCase() : data['title']}
                             </span>
@@ -321,11 +321,11 @@ export class HomePage extends React.Component<IHomePageProps, IHomePageState> {
                             style={{ maxHeight: 300, maxWidth: 230, minHeight: 300, minWidth: 230 }}
                             src={data.media[0]?.url} alt='' />
                         <div className="app-post-short-detail">
-                            <span className="app-post-title app-text-overflow-line-2"
+                            <span className="app-post-title app-text-overflow-line-1"
                                 style={{
                                     color: objectMapping?.style.color,
                                     fontWeight: objectMapping?.style.fontWeight,
-                                    maxHeight: 43.2,
+                                    maxHeight: 50,
                                 }}>
                                 {objectMapping?.style.markIcon ? <StarFilled style={{ color: '#00F5FF' }}/> : ''} {objectMapping?.style.isUpper ? data['title'].toUpperCase() : data['title']}
                             </span>

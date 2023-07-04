@@ -146,6 +146,7 @@ export class RegisterPage extends React.Component<IRegisterPageProps, IRegisterP
                                 </Grid>
                                 <Grid item xs={12}>
                                     <TextField
+                                        required
                                         fullWidth
                                         label="Điện thoại"
                                         id="phoneNo"
@@ -208,16 +209,17 @@ export class RegisterPage extends React.Component<IRegisterPageProps, IRegisterP
         let lastname = this.state.lastName;
         let pw = this.state.password;
         let pwCf = this.state.passwordConfirm;
+        let phoneNumber = this.state.phoneNumber;
 
         // let btn = document.getElementById('btn') as HTMLButtonElement | null;
         // let usernameId = document.getElementById('username') as HTMLButtonElement | null;
 
-        if (username == "" || firstname == "" || lastname == "" || pw == "" || pwCf == "") {
+        if (username === "" || firstname === "" || lastname === "" || pw === "" || pwCf === "" || phoneNumber === "") {
             this.props.openMessage('warning', 'Bạn cần nhập đầy đủ thông tin có dấu (*)', 3);
             console.log("chua nhap day du thong tin");
             return false;
         }
-        if (pw != pwCf) {
+        if (pw !== pwCf) {
             this.props.openMessage('warning', 'Xác nhận mật khẩu không trùng khớp!', 3);
             console.log("mat khau ko trung khop");
             return false;

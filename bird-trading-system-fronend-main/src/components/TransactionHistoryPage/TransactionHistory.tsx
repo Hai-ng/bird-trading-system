@@ -1,13 +1,13 @@
-import { Button, Col, Divider, Layout, Row, Tabs, Tag } from "antd";
-import { ColumnsType } from "antd/es/table";
+import { Col, Divider, Layout, Row, Tag } from "antd";
+// import { ColumnsType } from "antd/es/table";
 import React from "react";
 import moment from 'moment';
 import { NumericFormat } from "react-number-format";
-import { TransStatusMapping, TransStatusMappingStyle } from '../TransactionHistoryPage/Mapping Data/TransactionStatusMapping';
+// import { TransStatusMapping, TransStatusMappingStyle } from '../TransactionHistoryPage/Mapping Data/TransactionStatusMapping';
 // import { TransactionDetail } from "../TransactionHistoryPage/TransactionsHistoryDetails";
 import { CommonProps, IUserInfo } from "../CommonComponents/AppInterfaces";
-import { PaymentTypeMapping, PaymentTypeMappingStyle } from "../TransactionHistoryPage/Mapping Data/PaymentTypeMapping";
-import { FormOutlined } from '@ant-design/icons';
+// import { PaymentTypeMapping, PaymentTypeMappingStyle } from "../TransactionHistoryPage/Mapping Data/PaymentTypeMapping";
+// import { FormOutlined } from '@ant-design/icons';
 import { UserService } from "./UserService";
 import { CommonUtility } from "../../utilities/utilities";
 import { HeaderTemplate } from "../CommonComponents/Header";
