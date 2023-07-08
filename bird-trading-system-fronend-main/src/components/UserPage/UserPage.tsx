@@ -107,11 +107,11 @@ export class UserPage extends React.Component<IUserPageProps, IUserPageState> {
                                                             value={this.state.currentUser.balance}
                                                             displayType='text'
                                                             suffix=" ₫" />
-                                                        <Tooltip title="Cập nhật số dư">
+                                                        {/* <Tooltip title="Cập nhật số dư">
                                                             <Button icon={<RetweetOutlined />} onClick={() => {
                                                                 this.onRefreshBalance();
                                                             }}></Button>
-                                                        </Tooltip>
+                                                        </Tooltip> */}
                                                     </div>
 
                                                 </Col>

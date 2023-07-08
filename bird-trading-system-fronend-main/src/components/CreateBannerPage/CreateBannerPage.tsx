@@ -290,9 +290,9 @@ export class CreateBannerPage extends React.Component<ICreateBannerPageProps, IC
                             </Form.Item>
                             <Form.Item label="Số dư còn lại" style={{ fontWeight: 100, fontStyle: 'italic', marginBottom: 0 }}>
                                 <NumericFormat style={{ marginLeft: "3%", fontWeight: 100, fontStyle: 'italic' }} thousandSeparator=',' value={this.state.currentUser.balance} displayType='text' suffix=" ₫" />
-                                <Button type="default" style={{ marginLeft: 14 }} onClick={() => {
+                                {/* <Button type="default" style={{ marginLeft: 14 }} onClick={() => {
                                     this.onRefreshBalanceClick()
-                                }}>Cập nhật số dư</Button>
+                                }}>Cập nhật số dư</Button> */}
                             </Form.Item>
                             {
                                 this.checkBalance() ?

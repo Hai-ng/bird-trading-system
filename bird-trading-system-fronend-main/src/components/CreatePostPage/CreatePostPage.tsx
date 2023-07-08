@@ -290,9 +290,9 @@ export class CreatePostPage extends React.Component<ICreatePostPageProps, ICreat
                             </Form.Item>
                             <Form.Item label="Số dư còn lại" style={{ fontWeight: 100, fontStyle: 'italic', marginBottom: 0 }}>
                                 <NumericFormat style={{ marginLeft: "3%", fontWeight: 100, fontStyle: 'italic' }} thousandSeparator=','  value={this.state.currentUser.balance} displayType='text' suffix=" ₫" />
-                                <Button type="default" style={{ marginLeft: 14 }} onClick={() => {
+                                {/* <Button type="default" style={{ marginLeft: 14 }} onClick={() => {
                                     this.onRefreshBalanceClick()
-                                }}>Cập nhật số dư</Button>
+                                }}>Cập nhật số dư</Button> */}
                             </Form.Item>
 
                             {
@@ -650,7 +650,7 @@ export class CreatePostPage extends React.Component<ICreatePostPageProps, ICreat
                 this.setState({
                     currentUser: state
                 })
-            }
+            }    
             if (res.response.response.status === 401) {
                 this.props.openMessage('info', 'Phiên đăng nhập đã hết hạn', undefined, noti_id);
                 setTimeout(() => {

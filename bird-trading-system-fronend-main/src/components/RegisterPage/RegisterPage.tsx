@@ -235,7 +235,8 @@ export class RegisterPage extends React.Component<IRegisterPageProps, IRegisterP
             "username": this.state.username,
             "password": this.state.password,
             "email": this.state.email,
-            "phoneNumber": this.state.phoneNumber
+            "phoneNumber": this.state.phoneNumber,
+            "address": this.state.address
         }
         let key = `register_${new Date().getTime()}`;
         this.props.openMessage('loading', 'Đang tạo tài khoản...', undefined, key);

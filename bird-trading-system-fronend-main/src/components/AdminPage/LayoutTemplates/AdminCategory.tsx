@@ -109,7 +109,7 @@ export class Category extends React.Component<ICategoryProps, ICategoryState> {
         return (
             <Row justify={'center'}>
                 <Col span={22}>
-                    <Button type="primary" icon={<PlusOutlined />} onClick={this.onCreateCategory}>New Category</Button>
+                    {/* <Button type="primary" icon={<PlusOutlined />} onClick={this.onCreateCategory}>New Category</Button> */}
 
                     <Table columns={this.state.tableColumn} dataSource={this.state.tableDataSource} />
                     <CreateCategory
