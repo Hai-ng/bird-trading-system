@@ -107,11 +107,11 @@ export class UserPage extends React.Component<IUserPageProps, IUserPageState> {
                                                             value={this.state.currentUser.balance}
                                                             displayType='text'
                                                             suffix=" ₫" />
-                                                        {/* <Tooltip title="Cập nhật số dư">
+                                                        <Tooltip title="Cập nhật số dư">
                                                             <Button icon={<RetweetOutlined />} onClick={() => {
                                                                 this.onRefreshBalance();
                                                             }}></Button>
-                                                        </Tooltip> */}
+                                                        </Tooltip>
                                                     </div>
 
                                                 </Col>
@@ -261,17 +261,17 @@ export class UserPage extends React.Component<IUserPageProps, IUserPageState> {
                     currentUser: state
                 })
             }
-            if (res.response.response.status === 401) {
-                this.props.openMessage('info', 'Phiên đăng nhập đã hết hạn', undefined, noti_id);
-                setTimeout(() => {
-                    localStorage.removeItem('currentUser');
-                    this.props.destroyMessage(noti_id);
-                    CommonUtility.redirectTo('/login');
-                }, 3000);
-                return;
-            }
-            this.props.openMessage('error', 'Đã xảy ra lỗi khi lấy số dư. Vui lòng tải lại trang và thử lại.', 3);
-            return;
+            // if (res.response.response.status === 401) {
+            //     this.props.openMessage('info', 'Phiên đăng nhập đã hết hạn', undefined, noti_id);
+            //     setTimeout(() => {
+            //         localStorage.removeItem('currentUser');
+            //         this.props.destroyMessage(noti_id);
+            //         CommonUtility.redirectTo('/login');
+            //     }, 3000);
+            //     return;
+            // }
+            // this.props.openMessage('error', 'Đã xảy ra lỗi khi lấy số dư. Vui lòng tải lại trang và thử lại.', 3);
+            // return;
         })
     }
 }

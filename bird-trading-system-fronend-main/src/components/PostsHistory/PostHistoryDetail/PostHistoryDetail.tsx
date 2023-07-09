@@ -228,7 +228,7 @@ export class PostHistoryDetailPage extends React.Component<IPostHistoryDetailPag
         if (activePack.length === 0) {
             this.activeNewPacke(data);
         } else {
-            let postTransId = activePack[0].id;
+            let postTransId = activePack[0]?.id;
             this.cancelPostTransaction(postTransId).then(res => {
                 if (res) {
                     this.activeNewPacke(data);
@@ -483,15 +483,17 @@ export class PostHistoryDetailPage extends React.Component<IPostHistoryDetailPag
             if (activePack.length === 0) {
                 item['statusMapping'] = 'emptyPack';
                 item['expiredDate'] = '';
-            }
-            let today = new Date();
-            let validDate = new Date(activePack[0].validDate);
-            if (today > validDate) {
-                item['statusMapping'] = 'expired';
+            } else {
+                let today = new Date();
+                let validDate = new Date(activePack[0]?.validDate);
+                if (today > validDate) {
+                    item['statusMapping'] = 'expired';
+                    item['expiredDate'] = moment(validDate).format('MM/DD/YYYY, h:mm:ss A');
+                }
+                item['statusMapping'] = 'approved';
                 item['expiredDate'] = moment(validDate).format('MM/DD/YYYY, h:mm:ss A');
             }
-            item['statusMapping'] = 'approved';
-            item['expiredDate'] = moment(validDate).format('MM/DD/YYYY, h:mm:ss A');
+            
         }
         return item;
     }

@@ -289,16 +289,16 @@ export class CreatePostPage extends React.Component<ICreatePostPageProps, ICreat
                                 <NumericFormat style={{ width: "97%", marginLeft: "3%", fontWeight: 700 }} thousandSeparator=',' value={this.getToMoney()} displayType='text' suffix=" ₫" />
                             </Form.Item>
                             <Form.Item label="Số dư còn lại" style={{ fontWeight: 100, fontStyle: 'italic', marginBottom: 0 }}>
-                                <NumericFormat style={{ marginLeft: "3%", fontWeight: 100, fontStyle: 'italic' }} thousandSeparator=','  value={this.state.currentUser.balance} displayType='text' suffix=" ₫" />
-                                {/* <Button type="default" style={{ marginLeft: 14 }} onClick={() => {
+                                <NumericFormat style={{ marginLeft: "3%", fontWeight: 100, fontStyle: 'italic' }} thousandSeparator=',' value={this.state.currentUser.balance} displayType='text' suffix=" ₫" />
+                                <Button type="default" style={{ marginLeft: 14 }} onClick={() => {
                                     this.onRefreshBalanceClick()
-                                }}>Cập nhật số dư</Button> */}
+                                }}>Cập nhật số dư</Button>
                             </Form.Item>
 
                             {
-                                this.checkBalance() ? 
-                                <span style={{ color: 'red', marginLeft: 48 }}>Số dư của bạn không đủ để tạo bài đăng</span>
-                            : <></>
+                                this.checkBalance() ?
+                                    <span style={{ color: 'red', marginLeft: 48 }}>Số dư của bạn không đủ để tạo bài đăng</span>
+                                    : <></>
                             }
 
                             <Form.Item>
@@ -534,15 +534,15 @@ export class CreatePostPage extends React.Component<ICreatePostPageProps, ICreat
                 return;
             }
             let noti_id = `withdraw_${new Date().getTime()}`
-            if (res.response.response.status === 401) {
-                this.props.openMessage('info', 'Phiên đăng nhập đã hết hạn', undefined, noti_id);
-                setTimeout(() => {
-                    localStorage.removeItem('currentUser');
-                    this.props.destroyMessage(noti_id);
-                    CommonUtility.redirectTo('/login');
-                }, 3000);
-                return;
-            }
+            // if (res.response.response.status === 401) {
+            //     this.props.openMessage('info', 'Phiên đăng nhập đã hết hạn', undefined, noti_id);
+            //     setTimeout(() => {
+            //         localStorage.removeItem('currentUser');
+            //         this.props.destroyMessage(noti_id);
+            //         CommonUtility.redirectTo('/login');
+            //     }, 3000);
+            //     return;
+            // }
         })
     }
 
@@ -555,15 +555,15 @@ export class CreatePostPage extends React.Component<ICreatePostPageProps, ICreat
                 return;
             }
             let noti_id = `withdraw_${new Date().getTime()}`
-            if (res.response.response.status === 401) {
-                this.props.openMessage('info', 'Phiên đăng nhập đã hết hạn', undefined, noti_id);
-                setTimeout(() => {
-                    localStorage.removeItem('currentUser');
-                    this.props.destroyMessage(noti_id);
-                    CommonUtility.redirectTo('/login');
-                }, 3000);
-                return;
-            }
+            // if (res.response.response.status === 401) {
+            //     this.props.openMessage('info', 'Phiên đăng nhập đã hết hạn', undefined, noti_id);
+            //     setTimeout(() => {
+            //         localStorage.removeItem('currentUser');
+            //         this.props.destroyMessage(noti_id);
+            //         CommonUtility.redirectTo('/login');
+            //     }, 3000);
+            //     return;
+            // }
         })
     }
 
@@ -583,15 +583,15 @@ export class CreatePostPage extends React.Component<ICreatePostPageProps, ICreat
                     resolve(true);
                 } else {
                     let noti_id = `withdraw_${new Date().getTime()}`
-                    if (res.response.response.status === 401) {
-                        this.props.openMessage('info', 'Phiên đăng nhập đã hết hạn', undefined, noti_id);
-                        setTimeout(() => {
-                            localStorage.removeItem('currentUser');
-                            this.props.destroyMessage(noti_id);
-                            CommonUtility.redirectTo('/login');
-                        }, 3000);
-                        return;
-                    }
+                    // if (res.response.response.status === 401) {
+                    //     this.props.openMessage('info', 'Phiên đăng nhập đã hết hạn', undefined, noti_id);
+                    //     setTimeout(() => {
+                    //         localStorage.removeItem('currentUser');
+                    //         this.props.destroyMessage(noti_id);
+                    //         CommonUtility.redirectTo('/login');
+                    //     }, 3000);
+                    //     return;
+                    // }
                     this.props.openMessage('error', `Upload image failed.`, 3);
                     reject();
                 }
@@ -625,17 +625,18 @@ export class CreatePostPage extends React.Component<ICreatePostPageProps, ICreat
                     currentUser: state
                 })
             }
-            if (res.response.response.status === 401) {
-                this.props.openMessage('info', 'Phiên đăng nhập đã hết hạn', undefined, noti_id);
-                setTimeout(() => {
-                    localStorage.removeItem('currentUser');
-                    this.props.destroyMessage(noti_id);
-                    CommonUtility.redirectTo('/login');
-                }, 3000);
-                return;
-            }
-            this.props.openMessage('error', 'Đã xảy ra lỗi khi lấy số dư. Vui lòng tải lại trang và thử lại.', 3);
-            return;
+            // if (res.response.response.status === 401) {
+            // if (res.status === 401) {
+            //     this.props.openMessage('info', 'Phiên đăng nhập đã hết hạn', undefined, noti_id);
+            //     setTimeout(() => {
+            //         localStorage.removeItem('currentUser');
+            //         this.props.destroyMessage(noti_id);
+            //         CommonUtility.redirectTo('/login');
+            //     }, 3000);
+            //     return;
+            // }
+            // this.props.openMessage('error', 'Đã xảy ra lỗi khi lấy số dư. Vui lòng tải lại trang và thử lại.', 3);
+            // return;
         })
     }
 
@@ -650,18 +651,18 @@ export class CreatePostPage extends React.Component<ICreatePostPageProps, ICreat
                 this.setState({
                     currentUser: state
                 })
-            }    
-            if (res.response.response.status === 401) {
-                this.props.openMessage('info', 'Phiên đăng nhập đã hết hạn', undefined, noti_id);
-                setTimeout(() => {
-                    localStorage.removeItem('currentUser');
-                    this.props.destroyMessage(noti_id);
-                    CommonUtility.redirectTo('/login');
-                }, 3000);
-                return;
             }
-            this.props.openMessage('error', 'Đã xảy ra lỗi khi lấy số dư. Vui lòng tải lại trang và thử lại.', 3);
-            return;
+            // if (res.response.response.status === 401) {
+            //     this.props.openMessage('info', 'Phiên đăng nhập đã hết hạn', undefined, noti_id);
+            //     setTimeout(() => {
+            //         localStorage.removeItem('currentUser');
+            //         this.props.destroyMessage(noti_id);
+            //         CommonUtility.redirectTo('/login');
+            //     }, 3000);
+            //     return;
+            // }
+            // this.props.openMessage('error', 'Đã xảy ra lỗi khi lấy số dư. Vui lòng tải lại trang và thử lại.', 3);
+            // return;
         })
     }
 }
