@@ -87,7 +87,7 @@ export class BirdCagePage extends React.Component<IBirdCagePageProps, IBirdCageP
                             </Form.Item>
                             <div className="app-button-search">
                                 <Button onClick={() => { this.onClearSearch() }} disabled={this.state.isDisableButtonSearch}>Xoá</Button>
-                                <Button icon={<SearchOutlined />} onClick={() => { this.onSearchBirdCage() }}>Tìm kiếm</Button>
+                                <Button icon={<SearchOutlined />} onClick={() => { this.onSearchBirdCage() }} disabled={true}>Tìm kiếm</Button>
                             </div>
                         </Form>
                     </div>

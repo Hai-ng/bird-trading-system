@@ -87,7 +87,7 @@ export class AccessoryPage extends React.Component<IAccessoryPageProps, IAccesso
                             </Form.Item>
                             <div className="app-button-search">
                                 <Button onClick={() => { this.onClearSearch() }} disabled={this.state.isDisableButtonSearch}>Xoá</Button>
-                                <Button icon={<SearchOutlined />} onClick={() => { this.onSearchAccessory() }}>Tìm kiếm</Button>
+                                <Button icon={<SearchOutlined />} onClick={() => { this.onSearchAccessory() }} disabled={true}>Tìm kiếm</Button>
                             </div>
                         </Form>
                     </div>

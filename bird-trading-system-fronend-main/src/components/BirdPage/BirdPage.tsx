@@ -86,7 +86,7 @@ export class BirdPage extends React.Component<IBirdPageProps, IBirdPageState> {
                             </Form.Item>
                             <div className="app-button-search">
                                 <Button onClick={() => { this.onClearSearch() }} disabled={this.state.isDisableButtonSearch}>Xoá</Button>
-                                <Button icon={<SearchOutlined />} onClick={() => { this.onSearchBird() }}>Tìm kiếm</Button>
+                                <Button icon={<SearchOutlined />} onClick={() => { this.onSearchBird() }} disabled={true}>Tìm kiếm</Button>
                             </div>
                         </Form>
                     </div>
