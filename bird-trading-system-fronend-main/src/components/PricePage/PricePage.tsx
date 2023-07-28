@@ -92,11 +92,15 @@ export class PricePage extends React.Component<IPricePageProps, IPricePageState>
                                 <h3>
                                     Lưu ý
                                 </h3>
-                                <p> Tất cả các bài viết được hiển thị ở trang tin tức theo loại tin đã chọn </p>
-                                <p> Bài hiển thị trang chủ bản desktop cũng hiển thị ở vị trí tương ứng bản mobile. </p>
-                                <p> Các khung giờ lên bài: 8h - 11h, 11h - 14h, 14h - 17h</p>
-                                <p> Thời gian gửi bài: Khách hàng gửi nội dung bài hoàn chỉnh trước khi xuất bản lên website birdtrade.com.vn ít nhất 4 giờ làm việc. </p>
-                                <p> Nội dung bài viết tối đa 1000 từ. </p>
+                                <ul>
+                                <li style={{color: 'red'}}>Gói Banner sẽ dược hiển thị ở ảnh bìa trang chủ</li>
+                                <li style={{color: 'red'}}>Mức độ ưu tiên của các gói theo thứ tự tăng dần : Bronze - Silver - Gold</li>
+                                <li> Tất cả các bài viết được hiển thị ở trang tin tức theo loại tin đã chọn </li>
+                                <li> Các khung giờ lên bài: 8h - 11h, 14h - 17h</li>
+                                <li> Thời gian gửi bài: Khách hàng gửi nội dung bài hoàn chỉnh trước khi xuất bản lên website birdtrade.com.vn ít nhất 4 giờ làm việc. </li>
+                                <li> Nội dung bài viết tối đa 1000 từ. </li>
+                                </ul>
+                                
                             </Col>
                         </Row>
                     </div>
