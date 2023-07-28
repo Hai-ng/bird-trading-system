@@ -182,7 +182,7 @@ export class WithdrawPage extends React.Component<IWithdrawPageProps, IWithdrawP
                                                             <span><strong>Bước cuối cùng.</strong></span>
                                                             <span>Sau khi nhấn nút xác nhận, yêu câu của bạn sẽ được gửi về hệ thống.</span>
                                                             <span>Vui lòng chờ xét duyệt từ ban quản trị. Sau khi yêu cầu của bạn được phê duyệt, tiền sẽ được cập nhận vào số dư</span>
-                                                            <span>Mọi thắc mắc xin liên hệ qua email: kienadmin@gmail.com</span>
+                                                            <span>Mọi thắc mắc xin liên hệ qua email: admin@gmail.com</span>
                                                         </div>
                                                     </Form>
                                                 </div>

@@ -33,33 +33,33 @@ export class HeaderTemplate extends React.Component<IHeaderProps, IHeaderState> 
         let menuItems = this.getMenuUser();
         return (
             <Layout>
-                <Header className="App-header-main" style={{ backgroundColor: '#64be43' }}>
+                <Header className="App-header-main" style={{ backgroundColor: '#CC9966' }}>
                     <div className="App-header-logo">
                         <a href="/home"><img src={require('../../assets/images/LOGO2.png')} alt="logo" /></a>
                     </div>
                     <div className="App-header-menu">
                         <Row>
                             <Col
-                                style={{ backgroundColor: this.props.activeTab === 1 ? '#64aa43' : 'transparent' }}
+                                style={{ backgroundColor: this.props.activeTab === 1 ? '#CC9966' : 'transparent' }}
                                 span={3} className="header-tab tab-1">
                                 <a href="/home"><div className={this.props.activeTab === 1 ? 'active-tab' : ''}>Trang Chủ</div></a>
                             </Col>
                             <Col
-                                style={{ backgroundColor: this.props.activeTab === 2 ? '#64aa43' : 'transparent' }}
+                                style={{ backgroundColor: this.props.activeTab === 2 ? '#CC9966' : 'transparent' }}
                                 span={3} className="header-tab tab-2">
                                 <a href="/bird"><div className={this.props.activeTab === 2 ? 'active-tab' : ''}>Chim Cảnh</div></a></Col>
                             <Col
-                                style={{ backgroundColor: this.props.activeTab === 3 ? '#64aa43' : 'transparent' }}
+                                style={{ backgroundColor: this.props.activeTab === 3 ? '#CC9966' : 'transparent' }}
                                 span={3} className="header-tab tab-3">
                                 <a href="/birdcage"><div className={this.props.activeTab === 3 ? 'active-tab' : ''}>Lồng Chim</div></a></Col>
                             <Col
-                                style={{ backgroundColor: this.props.activeTab === 4 ? '#64aa43' : 'transparent' }}
+                                style={{ backgroundColor: this.props.activeTab === 4 ? '#CC9966' : 'transparent' }}
                                 span={3} className="header-tab tab-4">
                                 <a href="/accessory"><div className={this.props.activeTab === 4 ? 'active-tab' : ''}>Phụ Kiện</div></a></Col>
                             {
                                 this.state.currentUser ?
                                     <Col
-                                        style={{ backgroundColor: this.props.activeTab === 5 ? '#64aa43' : 'transparent' }}
+                                        style={{ backgroundColor: this.props.activeTab === 5 ? '#CC9966' : 'transparent' }}
                                         span={3} className="header-tab tab-5">
                                         <a href="/posting"><div className={this.props.activeTab === 5 ? 'active-tab' : ''}>Đăng Bài</div></a></Col>
                                     : <></>
@@ -67,7 +67,7 @@ export class HeaderTemplate extends React.Component<IHeaderProps, IHeaderState> 
                             {
                                 this.state.currentUser ?
                                     <Col
-                                        style={{ backgroundColor: this.props.activeTab === 6 ? '#64aa43' : 'transparent' }}
+                                        style={{ backgroundColor: this.props.activeTab === 6 ? '#CC9966' : 'transparent' }}
                                         span={3} className="header-tab tab-6">
                                         <a href="/createBanner"><div className={this.props.activeTab === 6 ? 'active-tab' : ''}>Đăng Banner</div></a></Col>
                                     : <></>

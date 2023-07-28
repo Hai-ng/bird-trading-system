@@ -216,12 +216,12 @@ export class HomePage extends React.Component<IHomePageProps, IHomePageState> {
                                     fontWeight: objectMapping?.style.fontWeight,
                                     maxHeight: 50,
                                 }}>
-                                {objectMapping?.style.markIcon ? <StarFilled style={{ color: '#00F5FF' }} /> : ''} {objectMapping?.style.isUpper ? data['title'].toUpperCase() : data['title']}
+                                {objectMapping?.style.markIcon ? <StarFilled style={{ color: '#FFCC00' }} /> : ''} {objectMapping?.style.isUpper ? data['title'].toUpperCase() : data['title']}
                             </span>
                             <span>
                                 Giá: <NumericFormat thousandSeparator=',' value={data.price} displayType='text' suffix=" ₫" />
                             </span>
-                            <span className="app-post-location app-text-overflow-line-1" style={{ maxHeight: 21.6 }}>
+                            <span className="app-post-location app-text-overflow-line-1" style={{ maxHeight: 24 }}>
                                 <EnvironmentOutlined /> {data['address']}
                             </span>
                             <span >
@@ -272,7 +272,7 @@ export class HomePage extends React.Component<IHomePageProps, IHomePageState> {
                                     fontWeight: objectMapping?.style.fontWeight,
                                     maxHeight: 50,
                                 }}>
-                                {objectMapping?.style.markIcon ? <StarFilled style={{ color: '#00F5FF' }}/> : ''} {objectMapping?.style.isUpper ? data['title'].toUpperCase() : data['title']}
+                                {objectMapping?.style.markIcon ? <StarFilled style={{ color: '#FFCC00' }}/> : ''} {objectMapping?.style.isUpper ? data['title'].toUpperCase() : data['title']}
                             </span>
                             <span>
                                 Giá: <NumericFormat thousandSeparator=',' value={data.price} displayType='text' suffix=" ₫" />
@@ -327,7 +327,7 @@ export class HomePage extends React.Component<IHomePageProps, IHomePageState> {
                                     fontWeight: objectMapping?.style.fontWeight,
                                     maxHeight: 50,
                                 }}>
-                                {objectMapping?.style.markIcon ? <StarFilled style={{ color: '#00F5FF' }}/> : ''} {objectMapping?.style.isUpper ? data['title'].toUpperCase() : data['title']}
+                                {objectMapping?.style.markIcon ? <StarFilled style={{ color: '#FFCC00' }}/> : ''} {objectMapping?.style.isUpper ? data['title'].toUpperCase() : data['title']}
                             </span>
                             <span>
                                 Giá: <NumericFormat thousandSeparator=',' value={data.price} displayType='text' suffix=" ₫" />
