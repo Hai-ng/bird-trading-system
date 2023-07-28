@@ -262,7 +262,7 @@ const items = [
         key: '6',
         icon: <CreditCardOutlined />,
         children: null,
-        label: 'Pack'
+        label: 'Package'
     },
 
 ];
